@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<bindings xmlns="http://java.sun.com/xml/ns/jaxb" if-exists="true" version="2.1">
+  <!--
+
+Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.0 
+Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
+Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
+Generado el: 2020.08.14 a las 08:06:22 PM CDT 
+
+  -->
+  <bindings xmlns:tns="http://www.by.com/pokemonapi/wsdl" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="com.by.pokemonapi.wsdl"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="tns:getPokemonAbilitiesRequest">
+      <class ref="com.by.pokemonapi.wsdl.GetPokemonAbilitiesRequest"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:getPokemonAbilitiesResponse">
+      <class ref="com.by.pokemonapi.wsdl.GetPokemonAbilitiesResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:abilityList">
+      <class ref="com.by.pokemonapi.wsdl.AbilityList"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:getPokemonBase_experienceRequest">
+      <class ref="com.by.pokemonapi.wsdl.GetPokemonBaseExperienceRequest"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:getPokemonBase_experienceResponse">
+      <class ref="com.by.pokemonapi.wsdl.GetPokemonBaseExperienceResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:getPokemonIdRequest">
+      <class ref="com.by.pokemonapi.wsdl.GetPokemonIdRequest"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:getPokemonIdResponse">
+      <class ref="com.by.pokemonapi.wsdl.GetPokemonIdResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:getPokemonNameRequest">
+      <class ref="com.by.pokemonapi.wsdl.GetPokemonNameRequest"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:getPokemonNameResponse">
+      <class ref="com.by.pokemonapi.wsdl.GetPokemonNameResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:getPokemonLocation_area_encountersRequest">
+      <class ref="com.by.pokemonapi.wsdl.GetPokemonLocationAreaEncountersRequest"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:getPokemonLocation_area_encountersResponse">
+      <class ref="com.by.pokemonapi.wsdl.GetPokemonLocationAreaEncountersResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:getPokemonHeld_itemsRequest">
+      <class ref="com.by.pokemonapi.wsdl.GetPokemonHeldItemsRequest"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:getPokemonHeld_itemsResponse">
+      <class ref="com.by.pokemonapi.wsdl.GetPokemonHeldItemsResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:held_items">
+      <class ref="com.by.pokemonapi.wsdl.HeldItems"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:ability">
+      <class ref="com.by.pokemonapi.wsdl.Ability"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:held_itemsList">
+      <class ref="com.by.pokemonapi.wsdl.HeldItemsList"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:item">
+      <class ref="com.by.pokemonapi.wsdl.Item"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:version_detailsList">
+      <class ref="com.by.pokemonapi.wsdl.VersionDetailsList"/>
+    </bindings>
+  </bindings>
+</bindings>
