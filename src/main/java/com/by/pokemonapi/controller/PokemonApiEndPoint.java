@@ -38,33 +38,6 @@ public class PokemonApiEndPoint {
     private static final Logger LOGGER = LoggerFactory.getLogger(PokemonApiEndPoint.class);
     
 	private static final String NAMESPACE_URI = "http://www.by.com/pokemonapi/wsdl";
-	  
-   @PayloadRoot(namespace = NAMESPACE_URI, localPart = "getPokemonAbilitiesRequest")
-    @ResponsePayload
-    public GetPokemonAbilitiesResponse getAbilities(@RequestPayload GetPokemonAbilitiesRequest request) {
-    	GetPokemonAbilitiesResponse response = new GetPokemonAbilitiesResponse();
-    	AbilityList abilities = pokemonApiService.findAbilityByPokemonName(request.getName());
-        response.setAbility(abilities);
- 
-        String incoming =  this.httpServletRequest.getRemoteAddr();
-  	   requestService.saveRequest(incoming, "getPokemonAbilitiesRequest");  
-  	  
-        return response;
-    }
-   
-   @PayloadRoot(namespace = NAMESPACE_URI, localPart = "getPokemonHeld_itemsRequest")
-   @ResponsePayload
-   public GetPokemonHeldItemsResponse getHeldItem(@RequestPayload GetPokemonHeldItemsRequest request) {
-	  GetPokemonHeldItemsResponse response = new GetPokemonHeldItemsResponse();
-	  HeldItems heldItemsList = pokemonApiService.findHeldItemsByPokemonName(request.getName());
-      
-	  response.setHeldItems(heldItemsList);
-	  
-	  String incoming =  this.httpServletRequest.getRemoteAddr();
-	  requestService.saveRequest(incoming, "getPokemonHeld_itemsRequest");  
-
-       return response;
-   }
       
    @PayloadRoot(namespace = NAMESPACE_URI, localPart = "getPokemonIdRequest")
    @ResponsePayload
@@ -108,36 +81,9 @@ public class PokemonApiEndPoint {
 		PokemonApiDTO poke = pokemonDAO.getPokemon(requestDTO);
 		return poke;
 	}
-   
-   
-   @PayloadRoot(namespace = NAMESPACE_URI, localPart = "getPokemonBase_experienceRequest")
-   @ResponsePayload
-   public GetPokemonBaseExperienceResponse getBaseExperience(@RequestPayload GetPokemonBaseExperienceRequest request) {
-	  GetPokemonBaseExperienceResponse response = new GetPokemonBaseExperienceResponse();
-	  Integer base_experience = pokemonApiService.findBaseExperiencebyName(request.getName());
-      
-	  response.setBaseExperience(base_experience);
-	  
-	  String incoming =  this.httpServletRequest.getRemoteAddr();
-	  requestService.saveRequest(incoming, "getPokemonBase_experienceRequest");  
-	  
 
-       return response;
-   }
    
-   @PayloadRoot(namespace = NAMESPACE_URI, localPart = "getPokemonLocation_area_encountersRequest")
-   @ResponsePayload
-   public GetPokemonLocationAreaEncountersResponse getLocationAreaEnconters(@RequestPayload GetPokemonLocationAreaEncountersRequest request) {
-	   GetPokemonLocationAreaEncountersResponse response = new GetPokemonLocationAreaEncountersResponse();
-	  String local_area = pokemonApiService.findLocationAreaEncountersbyName(request.getName());
-      
-	  response.setLocationAreaEncounters(local_area);
-	  
-	  String incoming =  this.httpServletRequest.getRemoteAddr();
-	  requestService.saveRequest(incoming, "getPokemonLocation_area_encountersRequest");  
 
-       return response;
-   }
       
    
 }

@@ -12,20 +12,8 @@ Generado el: 2020.08.14 a las 08:06:22 PM CDT
     <schemaBindings map="false">
       <package name="com.by.pokemonapi.wsdl"/>
     </schemaBindings>
-    <bindings if-exists="true" scd="tns:getPokemonAbilitiesRequest">
-      <class ref="com.by.pokemonapi.wsdl.GetPokemonAbilitiesRequest"/>
-    </bindings>
-    <bindings if-exists="true" scd="tns:getPokemonAbilitiesResponse">
-      <class ref="com.by.pokemonapi.wsdl.GetPokemonAbilitiesResponse"/>
-    </bindings>
     <bindings if-exists="true" scd="~tns:abilityList">
       <class ref="com.by.pokemonapi.wsdl.AbilityList"/>
-    </bindings>
-    <bindings if-exists="true" scd="tns:getPokemonBase_experienceRequest">
-      <class ref="com.by.pokemonapi.wsdl.GetPokemonBaseExperienceRequest"/>
-    </bindings>
-    <bindings if-exists="true" scd="tns:getPokemonBase_experienceResponse">
-      <class ref="com.by.pokemonapi.wsdl.GetPokemonBaseExperienceResponse"/>
     </bindings>
     <bindings if-exists="true" scd="tns:getPokemonIdRequest">
       <class ref="com.by.pokemonapi.wsdl.GetPokemonIdRequest"/>
@@ -38,18 +26,6 @@ Generado el: 2020.08.14 a las 08:06:22 PM CDT
     </bindings>
     <bindings if-exists="true" scd="tns:getPokemonNameResponse">
       <class ref="com.by.pokemonapi.wsdl.GetPokemonNameResponse"/>
-    </bindings>
-    <bindings if-exists="true" scd="tns:getPokemonLocation_area_encountersRequest">
-      <class ref="com.by.pokemonapi.wsdl.GetPokemonLocationAreaEncountersRequest"/>
-    </bindings>
-    <bindings if-exists="true" scd="tns:getPokemonLocation_area_encountersResponse">
-      <class ref="com.by.pokemonapi.wsdl.GetPokemonLocationAreaEncountersResponse"/>
-    </bindings>
-    <bindings if-exists="true" scd="tns:getPokemonHeld_itemsRequest">
-      <class ref="com.by.pokemonapi.wsdl.GetPokemonHeldItemsRequest"/>
-    </bindings>
-    <bindings if-exists="true" scd="tns:getPokemonHeld_itemsResponse">
-      <class ref="com.by.pokemonapi.wsdl.GetPokemonHeldItemsResponse"/>
     </bindings>
     <bindings if-exists="true" scd="~tns:held_items">
       <class ref="com.by.pokemonapi.wsdl.HeldItems"/>

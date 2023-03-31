@@ -1,38 +1,6 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.by.com/pokemonapi/wsdl"
            targetNamespace="http://www.by.com/pokemonapi/wsdl" elementFormDefault="qualified">
 
-	<xs:element name="getPokemonAbilitiesRequest">
-		<xs:complexType>
-			<xs:sequence>
-				<xs:element name="name" type="xs:string" />
-			</xs:sequence>
-		</xs:complexType>
-	</xs:element>
-
-	<xs:element name="getPokemonAbilitiesResponse">
-		<xs:complexType>
-			<xs:sequence>
-				<xs:element name="ability" type="tns:abilityList" />
-			</xs:sequence>
-		</xs:complexType>
-	</xs:element>
-
-	<xs:element name="getPokemonBase_experienceRequest">
-		<xs:complexType>
-			<xs:sequence>
-				<xs:element name="name" type="xs:string" />
-			</xs:sequence>
-		</xs:complexType>
-	</xs:element>
-
-	<xs:element name="getPokemonBase_experienceResponse">
-		<xs:complexType>
-			<xs:sequence>
-				<xs:element name="base_experience" type="xs:int" />
-			</xs:sequence>
-		</xs:complexType>
-	</xs:element>
-
 	<xs:element name="getPokemonIdRequest">
 		<xs:complexType>
 			<xs:sequence>
@@ -61,40 +29,6 @@
 		<xs:complexType>
 			<xs:sequence>
 				<xs:element name="name" type="xs:string" />
-			</xs:sequence>
-		</xs:complexType>
-	</xs:element>
-
-	<xs:element name="getPokemonLocation_area_encountersRequest">
-		<xs:complexType>
-			<xs:sequence>
-				<xs:element name="name" type="xs:string" />
-			</xs:sequence>
-		</xs:complexType>
-	</xs:element>
-
-	<xs:element
-		name="getPokemonLocation_area_encountersResponse">
-		<xs:complexType>
-			<xs:sequence>
-				<xs:element name="location_area_encounters"
-					type="xs:string" />
-			</xs:sequence>
-		</xs:complexType>
-	</xs:element>
-
-	<xs:element name="getPokemonHeld_itemsRequest">
-		<xs:complexType>
-			<xs:sequence>
-				<xs:element name="name" type="xs:string" />
-			</xs:sequence>
-		</xs:complexType>
-	</xs:element>
-
-	<xs:element name="getPokemonHeld_itemsResponse">
-		<xs:complexType>
-			<xs:sequence>
-				<xs:element name="held_items" type="tns:held_items" />
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>

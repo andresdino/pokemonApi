@@ -29,21 +29,7 @@ public class ObjectFactory {
     public ObjectFactory() {
     }
 
-    /**
-     * Create an instance of {@link GetPokemonAbilitiesRequest }
-     * 
-     */
-    public GetPokemonAbilitiesRequest createGetPokemonAbilitiesRequest() {
-        return new GetPokemonAbilitiesRequest();
-    }
 
-    /**
-     * Create an instance of {@link GetPokemonAbilitiesResponse }
-     * 
-     */
-    public GetPokemonAbilitiesResponse createGetPokemonAbilitiesResponse() {
-        return new GetPokemonAbilitiesResponse();
-    }
 
     /**
      * Create an instance of {@link AbilityList }
@@ -53,21 +39,7 @@ public class ObjectFactory {
         return new AbilityList();
     }
 
-    /**
-     * Create an instance of {@link GetPokemonBaseExperienceRequest }
-     * 
-     */
-    public GetPokemonBaseExperienceRequest createGetPokemonBaseExperienceRequest() {
-        return new GetPokemonBaseExperienceRequest();
-    }
 
-    /**
-     * Create an instance of {@link GetPokemonBaseExperienceResponse }
-     * 
-     */
-    public GetPokemonBaseExperienceResponse createGetPokemonBaseExperienceResponse() {
-        return new GetPokemonBaseExperienceResponse();
-    }
 
     /**
      * Create an instance of {@link GetPokemonIdRequest }
@@ -101,37 +73,6 @@ public class ObjectFactory {
         return new GetPokemonNameResponse();
     }
 
-    /**
-     * Create an instance of {@link GetPokemonLocationAreaEncountersRequest }
-     * 
-     */
-    public GetPokemonLocationAreaEncountersRequest createGetPokemonLocationAreaEncountersRequest() {
-        return new GetPokemonLocationAreaEncountersRequest();
-    }
-
-    /**
-     * Create an instance of {@link GetPokemonLocationAreaEncountersResponse }
-     * 
-     */
-    public GetPokemonLocationAreaEncountersResponse createGetPokemonLocationAreaEncountersResponse() {
-        return new GetPokemonLocationAreaEncountersResponse();
-    }
-
-    /**
-     * Create an instance of {@link GetPokemonHeldItemsRequest }
-     * 
-     */
-    public GetPokemonHeldItemsRequest createGetPokemonHeldItemsRequest() {
-        return new GetPokemonHeldItemsRequest();
-    }
-
-    /**
-     * Create an instance of {@link GetPokemonHeldItemsResponse }
-     * 
-     */
-    public GetPokemonHeldItemsResponse createGetPokemonHeldItemsResponse() {
-        return new GetPokemonHeldItemsResponse();
-    }
 
     /**
      * Create an instance of {@link HeldItems }
